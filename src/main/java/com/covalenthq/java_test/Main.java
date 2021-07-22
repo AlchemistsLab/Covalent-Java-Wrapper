@@ -8,11 +8,11 @@ import com.covalenthq.java.*;
 public class Main {
 
 	public static void main(String[] args) throws Exception {
-		CovalentSession session=new CovalentSession("YOUR_API_KEY_HERE","json");
-		CovalentPricing p = new CovalentPricing(session);
+		var session=new CovalentSession("YOUR_API_KEY_HERE","json");
+		var pricing = new CovalentPricing(session);
 		//0x495f947276749Ce646f68AC8c248420045cb7b5e
-		p.getHistoricalByAddress(CovalentNetworks.BinanceSmartChain, CovalentQuoteCurrency.usd,"0xaA0C2e4fc2b57F60FceA0a5A7b09200C918fA71b");
-		p.getHistoricalPriceByTickerSymbol(CovalentQuoteCurrency.usd, "ETH");
+		pricing.getHistoricalByAddress(CovalentNetworks.BINANCE_SMART_CHAIN, CovalentQuoteCurrency.usd,"0xaA0C2e4fc2b57F60FceA0a5A7b09200C918fA71b");
+		pricing.getHistoricalPriceByTickerSymbol(CovalentQuoteCurrency.usd, "ETH");
 		
 	}
 
