@@ -1,17 +1,17 @@
 package com.covalenthq.java;
 
 public enum CovalentNetworks {
-	Ethereum("1"),
-	Polygon("137"),
-	Avalanche("43114"),
-	BinanceSmartChain("56"),
-	FantomOpera("250"),
-	TestnetPolygonMaticMumbai("80001"),
-	TestnetFujiCChain("43113"),
-	TestnetKovan("42"),
-	TestnetBinanceSmartChain("97"),
-	TestnetMoonbaseAlpha("1287"),
-	TestnetFantom("4002");
+	ETHERIUM("1"),
+	POLYGON("137"),
+	AVALANCHE("43114"),
+	BINANCE_SMART_CHAIN("56"),
+	FANTOM_OPERA("250"),
+	TESTNET_POLYGON_MATIC_MUMBAI("80001"),
+	TESTNET_FUJI_CCHAIN("43113"),
+	TESTNET_KOVAN("42"),
+	TESTNET_BINANCE_SMART_CHAIN("97"),
+	TESTNET_MOONBASE_ALPHA("1287"),
+	TESTNET_FANTOM("4002");
 	
 	public final String value;
 
