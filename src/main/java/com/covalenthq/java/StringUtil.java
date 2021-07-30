@@ -8,7 +8,9 @@ public  class StringUtil {
 		var urlBuilder = new StringBuilder(url);
 		for(var i=0; i< params.length; i++) {
 			String separator= i==0? "?": "&";
-			urlBuilder.append(separator).append(params[i]).append("=").append(paramValues[i]);
+			if(paramValues[i] != null) {
+				urlBuilder.append(separator).append(params[i]).append("=").append(paramValues[i]);
+			}
 		}
 		url = urlBuilder.toString();
 		return url;

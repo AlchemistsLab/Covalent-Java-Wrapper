@@ -14,7 +14,7 @@ public class CovalentSession {
     private final OkHttpClient client;
     private String format = "";
 
-	private final static String serverUrl = "https://api.covalenthq.com/v1/";
+	public static final String serverUrl = "https://api.covalenthq.com/v1/";
 
     public CovalentSession(String apiKey) {
         this(apiKey, "json");
