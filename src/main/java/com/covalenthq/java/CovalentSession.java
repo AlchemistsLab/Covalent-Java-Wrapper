@@ -46,15 +46,12 @@ public class CovalentSession {
             url += "&format=" + this.getFormat();
         }
 
-        System.out.println(url);
         var request = new Request.Builder()
             .url(url)
             .build();
 
         try (var response = client.newCall(request).execute()) {
-            var responseString = response.body().string();
-            System.out.println(responseString);
-            return responseString;
+            return response.body().string();
         }
     }
 
